@@ -1,6 +1,10 @@
-#0B8389;
+#0B8389; navigasi
+#097075; hover
 #59AE7F;
 #64C4AF;
 #91CED7;
 #CCEBC0;
 #D9F5BE;
+
+#f39c12;
+#e67e22;

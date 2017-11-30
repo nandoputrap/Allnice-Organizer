@@ -2,7 +2,7 @@
   require_once "view/header.php";
 ?>
 
-<div class="container-fluid bg-2-sign-in">
+<div class="container-fluid bg bg-sign-in">
   <div class="container">
     <h1 class = "text-center sign-in"> SIGN IN ADMIN </h1>
 
@@ -44,5 +44,5 @@
 </div>
 
 <?php
-  require_once "view/footer.php";
+  require_once "view/footer-with-services.php";
 ?>

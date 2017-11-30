@@ -1,29 +1,45 @@
 <footer>
-<div class="container-fluid bg-4">
-  <div class="container">
-    <center>
-      <div id="want-a-service">
-        <a href="services.php" class="btn btn-danger btn-lg" id="want-a-service-btn" role="button">I want a service!</a>
-      </div>
-    </center>
+  <div class="container-fluid bg-footer">
+    <div class="container">
+      <div class="content-footer">
+        <div class="item-footer">
+          <div class="col-md-4">
+            <h4>Contact</h4>
+            <hr class="hr-footer">
+            <ul>
+              <li><i class="fa fa-map-marker"></i><p class="kontak">Jl. Berkah No. 26 Ciomas, Bogor.</p></li>
+              <li><i class="fa fa-phone"></i><p class="kontak">+6285716513806</p></li>
+              <li><i class="fa fa-envelope-o"></i><p class="kontak">allniceorganizer@gmail.com</p></li>
+              <li><a href="#"><i class="fa fa-facebook"></i><p class="kontak">Allnice Organizer</p></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i><p class="kontak">allniceorganizer</p></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i><p class="kontak">@allniceorganizer</p></a></li>
+            </ul>
+          </div>
 
-    <div class="col-md-6">
+          <div class="col-md-4">
+            <h4>Services</h4>
+            <hr class="hr-footer">
+            <ul>
+              <li><p class="jasa">Wedding Party</p></li>
+              <li><p class="jasa">Birthday Party</p></li>
+            </ul>
+          </div>
 
-      &copy; Allnice Organizer
-
-    </div>
-
-    <div class="col-md-6">
-      <div class="social-medias">
-        <a href="#"><i class="social fa fa-facebook" style="font-size:24px; color:white;"></i></a>
-        <a href="#"><i class="social fa fa-instagram" style="font-size:24px; color:white;"></i></a>
-        <a href="#"><i class="social fa fa-google-plus" style="font-size:24px; color:white;"></i></a>
-        <a href="#"><i class="social fa fa-twitter" style="font-size:24px; color:white;"></i></a>
+          <div class="col-md-4">
+            <h4>Partners</h4>
+            <hr class="hr-footer">
+            <ul>
+              <li><img src="assets/img/partner.jpg" alt="partner" id="partners">
+              </li><br>
+              <li><p>&copy; 4KA01 - 2017</p></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </footer>
+
 
 </body>
 

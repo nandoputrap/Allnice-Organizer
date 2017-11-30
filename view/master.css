@@ -1,0 +1,583 @@
+/****GENERAL*****/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+a{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+}
+
+p, i{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+hr{
+  border: solid 2px black;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+  color: #D9F5BE;
+}
+
+.container-fluid{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*bg = bagian. untuk memisah setiap bagian pada web*/
+.bg{
+  padding-top: 50px;
+}
+
+li{
+  list-style: none;
+}
+/*END GENERAL*/
+
+/*
+//////////////////////
+BEGIN HEADER.PHP
+/////////////////////
+*/
+
+/*BEGIN NAVIGASI*/
+.navbar{
+  background-color: #0B8389;
+  border-color: transparent;
+  min-height: 70px;
+	padding-top: 10px;
+  box-shadow: 1px 1px 10px #383838;
+}
+
+/*judul website*/
+.navbar-brand {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 3px;
+  word-spacing: 0.3em;
+  font-size: 24px;
+}
+
+/*warna menu*/
+.navbar-header .navbar-brand {
+	color: white;
+}
+
+/*berubah warna hover pada menu*/
+.navbar-default .navbar-nav > li > a:hover {
+	color: #D9F5BE;
+}
+
+.navbar-default .navbar-nav>li>a{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover{
+  color:  #D9F5BE;
+  background-color: transparent;
+}
+
+/*dropdown*/
+.dropdown-menu > li > a{
+  color: white;
+  background-color: #0B8389;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover{
+  background-color: #0B8389;
+  color: white;
+}
+
+ul .dropdown-menu{
+  background-color: #0B8389;
+}
+
+.dropdown-menu > li > a{
+  font-family: 'Raleway', sans-serif;
+  line-height: 2em;
+}
+
+/*END NAVIGASI*/
+
+/*
+//////////////////////
+END HEADER.PHP
+/////////////////////
+*/
+
+/*
+//////////////////////
+BEGIN FOOTER.PHP
+/////////////////////
+*/
+
+.bg-footer{
+  background-color: #2f2f2f;
+  color: white;
+  padding: 70px 0 50px 0;
+}
+
+.copyright{
+  font-size: 18px;
+}
+
+.kontak{
+  display: inline;
+  margin-left: 20px;
+
+}
+
+.item-footer>.col-md-4>ul>li{
+  margin-bottom: 20px;
+}
+
+.item-footer>.col-md-4>ul>li>a{
+  color: white;
+}
+
+.item-footer>.col-md-4>ul>li>a:hover{
+  color: #CCEBC0;
+}
+
+.hr-footer{
+  border-color: #0B8389;
+}
+
+#partners{
+  width: 100%;
+  height: 100%;
+}
+
+/*
+//////////////////////
+END FOOTER.PHP
+/////////////////////
+*/
+
+/*
+//////////////////////
+BEGIN INDEX.PHP
+/////////////////////
+*/
+
+/*tombol melayang*/
+.sticky{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #f39c12;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 3;
+  box-shadow: 1px 1px 10px #383838;
+}
+
+.sticky:hover{
+  background-color: #e67e22;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+
+}
+
+.content-box{
+  margin: 20% 0 15% 0;
+}
+
+.content-box>a{
+  color: #2f2f2f;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-box>a>p{
+  font-family: 'Raleway', sans-serif;
+}
+
+/*BEGIN INTRO*/
+.bg-intro{
+  padding-top: 70px;
+}
+
+.carousel-inner>.item>img{
+  width: 100%;
+  height: 600px;
+}
+
+.carousel-caption>h1{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  word-spacing: 0.3em;
+  font-size: 64px;
+  text-shadow: 1px 5px 5px #373737;
+}
+
+.carousel-caption>p{
+  margin-bottom: 200px;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-shadow: 1px 5px 5px #373737;
+}
+/*END INTRO*/
+
+/*BEGIN OUR SERVICES*/
+.bg-our-services{
+  min-height: 750px;
+}
+
+#hr-our-services{
+  margin: 30px 40%;
+  border-color: #0B8389;
+}
+
+.item-our-services{
+  padding-top: 50px;
+}
+
+.item-our-services>.container>.col-md-6{
+  padding: 0 50px 50px 50px;
+}
+
+.img-services{
+  width: 100%;
+  height:300px;
+  margin-bottom: 30px;
+}
+
+.index-services{
+  color: #0B8389;
+}
+
+.index-services:hover{
+  color: #2f2f2f;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+
+}
+/*END OUR SERVICES*/
+
+/*BEGIN WHY US*/
+.bg-why-us{
+  background-color: #64C4AF;
+}
+
+.bg-why-us:hover{
+  background-color: #86d2c2;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+}
+
+
+.content-why-us>.container>h1{
+  padding-bottom: 70px;
+  font-style: italic;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+}
+
+.content-why-us>.container>h1:hover{
+  padding-bottom: 70px;
+  font-style: italic;
+  font-size: 55px;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+
+  -webkit-transition: font-size .4s linear, color .4s linear;
+	-moz-transition: font-size .4s linear, color .4s linear;
+	-o-transition: font-size .4s linear, color .4s linear;
+	-ms-transition: font-size .4s linear, color .4s linear;
+	transition: font-size .4s linear, color .4s linear;
+}
+/*END WHY US*/
+
+/*BEGIN SERVICES*/
+.bg-services{
+  /*background-image: url("../assets/img/bg-about.png");*/
+  background-color: #ebebeb;
+  padding: 100px 0;
+  z-index: 3;
+  background-attachment: fixed; /*membuat background diam*/
+}
+
+.col-md-4>i{
+  font-size: 50px;
+  margin: 20px;
+  color: #0B8389;
+}
+
+.def-services{
+  color: #000000;
+}
+
+.col-md-4>i:hover{
+  color: #097075;
+}
+
+.item-services{
+  margin-bottom: 50px;
+  padding: 0 5%;
+}
+/*END SERVICES*/
+
+/*BEGIN REVIEWS*/
+.bg-reviews{
+  background-color: #64C4AF;
+  padding-bottom: 50px;
+}
+
+#hr-reviews{
+  margin: 30px 40%;
+  border-color: #0B8389;
+}
+
+.item-reviews{
+  padding-top: 50px;
+}
+
+.item-reviews>.container>.col-sm-4{
+  margin-bottom: 50px;
+}
+
+.item-reviews>.container>.col-sm-4>img{
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+}
+
+.item-reviews>.container>.col-sm-4>h3{
+  margin-top: 50px;
+}
+
+.item-reviews>.container>.col-sm-4>p{
+  margin-top: 30px;
+  font-size: 18px;
+}
+/*END REVIEWS*/
+
+/*
+//////////////////////
+END INDEX.PHP
+/////////////////////
+*/
+
+/*
+////////////////////
+BEGIN ABOUT.PHP
+///////////////////
+*/
+.content-about{
+  padding-top: 100px;
+}
+
+#hr-about{
+  margin: 30px 30%;
+  border-color: #0B8389;
+}
+
+#logo-allnice{
+  width: 300px;
+  height: 250px;
+  margin: 50px auto;
+}
+
+.about-organizer{
+  font-size: 18px;
+  padding-top: 20px;
+  margin-bottom: 100px;
+}
+
+.item-about-team{
+  padding-top: 100px;
+}
+
+.bg-about-team{
+  background-color: #64C4AF;
+  padding-bottom: 100px;
+}
+
+#hr-our-team{
+  margin: 30px 40%;
+  border-color: #0B8389;
+}
+
+.item-our-team>center>.col-lg-12{
+  padding: 50px 0;
+}
+
+.item-our-team>center>.col-md-4{
+  padding: 50px 0;
+}
+
+.item-our-team>center>.col-lg-12>img,
+.item-our-team>center>.col-md-4>img{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+/*
+////////////////////
+END ABOUT.PHP
+///////////////////
+*/
+
+/*
+/////////////////
+BEGIN FAQ.PHP
+////////////////
+*/
+
+.bg-faq{
+  min-height: 700px;
+  background-image: url(../assets/img/bg-faq.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.content-faq{
+  padding: 100px 0;
+}
+
+.item-faq{
+  padding: 50px 0;
+}
+
+#accordion>.panel-default>.panel-heading{
+  background-color: #64C4AF;
+}
+
+.panel-title>a{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.panel-title>a:hover{
+  color: #0B8389;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.panel-group .panel{
+  margin-bottom: 15px;
+  border: none;
+}
+
+
+/*
+/////////////////
+END FAQ.PHP
+////////////////
+*/
+
+
+/*
+/////////////////
+BEGIN SIGN IN.PHP
+////////////////
+*/
+.bg-sign-in{
+  background-image: url(../assets/img/bg-about.png);
+  min-height: 700px;
+}
+
+.title-sign-in>h1{
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.content-sign-in{
+  margin: 100px auto;
+  border: solid 2px transparent;
+  border-radius: 5px;
+  background-color: #0B8389;
+  width: 300px;
+  height: 350px;
+  box-shadow: 1px 1px 10px #2f2f2f;
+}
+
+.title-sign-in{
+  margin: 30px 0;
+}
+
+.form-sign-in{
+  margin: 30px 10%;
+}
+
+.form-sign-in>a{
+  color: white;
+}
+
+.form-sign-in>a:hover{
+  color: #D9F5BE;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+
+}
+
+.input-group{
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.lupa-password{
+  margin-top: 50px;
+}
+
+.btn-allnice{
+  width: 100%;
+  padding: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*input {
+text-align: center;
+background-color: white;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 250px;
+transition: border .5s;
+}*/
+/*
+/////////////////
+END SIGN IN.PHP
+////////////////
+*/

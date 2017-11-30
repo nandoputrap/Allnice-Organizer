@@ -7,9 +7,10 @@
     <meta name="author" content="Nando P. Pratama, Ario Bima A., Dimas Kukuh P., Gemala Santri R., Natasya Irani P., Rindang Rahastri P., Vicky D. Putra">
     <title>Allnice Organizer</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="view/style.css">
+    <link rel="stylesheet" href="view/master.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600i|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   </head>
 
@@ -26,7 +27,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">ALLNICE ORGANIZER</a>
+            <a class="navbar-brand" href="index.php">ALLNICE</a>
           </div>
           <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
@@ -41,7 +42,7 @@
               <li><a href="gallery.php">GALLERY</a></li>
               <li><a href="about.php">ABOUT</a></li>
               <li><a href="faq.php">FAQ</a></li>
-              <li><a href="signin.php">SIGN IN</a></li>
+              <li><a href="sign-in.php">SIGN IN</a></li>
 
             </ul>
           </div><!--/.nav-collapse -->
