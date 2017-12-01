@@ -1,5 +1,5 @@
 <?php
-  require_once "view/header.php";
+  require_once "core/init.php";
 ?>
 
 <div class="container-fluid bg bg-about">

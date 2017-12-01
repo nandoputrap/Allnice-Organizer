@@ -74,6 +74,7 @@ BEGIN HEADER.PHP
 /*warna menu*/
 .navbar-header .navbar-brand {
 	color: white;
+  text-shadow: 1px 1px 5px #2f2f2f;
 }
 
 /*berubah warna hover pada menu*/
@@ -84,6 +85,7 @@ BEGIN HEADER.PHP
 .navbar-default .navbar-nav>li>a{
   font-family: 'Raleway', sans-serif;
   color: white;
+  text-shadow: 1px 1px 5px #2f2f2f;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -91,6 +93,7 @@ BEGIN HEADER.PHP
 .navbar-default .navbar-nav > .active > a:hover{
   color:  #D9F5BE;
   background-color: transparent;
+
 }
 
 /*dropdown*/
@@ -105,6 +108,7 @@ BEGIN HEADER.PHP
 .navbar-default .navbar-nav > .open > a:hover{
   background-color: #0B8389;
   color: white;
+
 }
 
 ul .dropdown-menu{
@@ -143,7 +147,6 @@ BEGIN FOOTER.PHP
 .kontak{
   display: inline;
   margin-left: 20px;
-
 }
 
 .item-footer>.col-md-4>ul>li{
@@ -179,7 +182,7 @@ BEGIN INDEX.PHP
 /////////////////////
 */
 
-/*tombol melayang*/
+/*BEGIN tombol melayang*/
 .sticky{
   border-radius: 50%;
   width: 100px;
@@ -215,6 +218,7 @@ BEGIN INDEX.PHP
 .content-box>a>p{
   font-family: 'Raleway', sans-serif;
 }
+/*END TOMBOL MELAYANG*/
 
 /*BEGIN INTRO*/
 .bg-intro{
@@ -280,7 +284,6 @@ BEGIN INDEX.PHP
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-
 }
 /*END OUR SERVICES*/
 
@@ -461,10 +464,10 @@ BEGIN FAQ.PHP
 
 .bg-faq{
   min-height: 700px;
-  background-image: url(../assets/img/bg-faq.jpg);
+  /*background-image: url(../assets/img/bg-faq.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: 80%;
+  background-attachment: fixed;*/
 }
 
 .content-faq{
@@ -511,6 +514,7 @@ BEGIN SIGN IN.PHP
 .bg-sign-in{
   background-image: url(../assets/img/bg-about.png);
   min-height: 700px;
+  background-size: cover;
 }
 
 .title-sign-in>h1{
@@ -565,19 +569,91 @@ BEGIN SIGN IN.PHP
   font-family: 'Open Sans', sans-serif;
 }
 
-/*input {
-text-align: center;
-background-color: white;
-border: 2px solid transparent;
-border-radius: 3px;
-font-size: 16px;
-font-weight: 200;
-padding: 10px 0;
-width: 250px;
-transition: border .5s;
-}*/
 /*
 /////////////////
 END SIGN IN.PHP
+////////////////
+*/
+
+/*
+/////////////////
+BEGIN PILIH JASA.PHP
+////////////////
+*/
+.bg-pilih-jasa{
+  margin: 100px 0;
+}
+
+.content-pilih-jasa{
+  margin: 0 20px;
+}
+
+.item-pilih-jasa{
+  margin: 100px 0;
+}
+
+.item-pilih-jasa>.col-md-6{
+  margin: auto;
+  padding: 50px;
+  border: solid 2px transparent;
+  border-radius: 5px;
+  background-color: #0B8389;
+  box-shadow: 1px 1px 10px #2f2f2f;
+}
+
+.col-md-6>.box-jasa{
+  margin: 50px;
+}
+
+.box-jasa{
+  margin: 0 30px;
+}
+
+.box-jasa>center>i{
+  font-size: 100px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.
+/*
+/////////////////
+END PILIH JASA.PHP
+////////////////
+*/
+
+/*
+/////////////////
+BEGIN ORDER.PHP
+////////////////
+*/
+.bg-order{
+  background-image: url(../assets/img/bg-about.png);
+}
+
+.content-order{
+  margin: 100px auto;
+  background-color: #0B8389;
+  width: 600px;
+  height: 700px;
+  padding: 30px 0;
+  border: solid 2px transparent;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #2f2f2f;
+}
+
+.title-order{
+  padding: 30px 0;
+}
+
+.title-order>h1{
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+
+/*
+/////////////////
+END ORDER.PHP
 ////////////////
 */

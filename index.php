@@ -1,5 +1,5 @@
 <?php
-  require_once "view/header.php";
+  require_once "core/init.php";
 ?>
 
     <!--BEGIN INTRO-->
@@ -21,14 +21,14 @@
             </div>
           </div>
           <div class="item">
-            <img src="assets/img/bg-marriage-2.jpg" alt="bg-birthday-1">
+            <img src="assets/img/bg-intro-wedding.jpg" alt="wedding">
             <div class="carousel-caption">
               <h1 class="title-intro">WEDDING PARTY</h1>
               <p class="caption-intro">Unforgettable wedding concept. Makes your days happier.</p>
             </div>
           </div>
           <div class="item">
-            <img src="assets/img/bg-birthday-1.jpg" alt="bg-birthday-1">
+            <img src="assets/img/bg-intro-birthday.jpg" alt="birthday">
             <div class="carousel-caption">
               <h1 class="title-intro">BIRTHDAY PARTY</h1>
               <p class="caption-intro">Feels like reborn with our Birthday Party concept.</p>
@@ -60,7 +60,9 @@
             <div class="col-md-6">
               <img class="img-services img-rounded" id="marriage-service" src="assets/img/marriage-service.jpg" alt="Card image cap">
               <a href="#"><h3 class="text-center index-services">Wedding Party</h3></a>
-              <p class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="text-center">
+                Pernikahan adalah acara yang tak terlupakan. Buatlah acara pernikahanmu sesuai dengan keinginamu. Jadilah raja ratu dalam sehari!
+              </p>
             </div>
 
             <div class="col-md-6">
@@ -154,7 +156,7 @@
     <div class="sticky">
       <div class="box">
         <div class="content-box">
-          <a href="services.php" class="text-center">
+          <a href="pilih-jasa.php" class="text-center">
             <p id="i-want-a-service">Order a service!</p>
           </a>
         </div>
