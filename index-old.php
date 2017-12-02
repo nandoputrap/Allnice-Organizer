@@ -60,7 +60,9 @@
             <div class="col-md-6">
               <img class="img-services img-rounded" id="marriage-service" src="assets/img/marriage-service.jpg" alt="Card image cap">
               <a href="#"><h3 class="text-center index-services">Wedding Party</h3></a>
-              <p class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="text-center">
+                Pernikahan adalah acara yang tak terlupakan. Buatlah acara pernikahanmu sesuai dengan keinginamu. Jadilah raja ratu dalam sehari!
+              </p>
             </div>
 
             <div class="col-md-6">
@@ -154,7 +156,7 @@
     <div class="sticky">
       <div class="box">
         <div class="content-box">
-          <a href="order.php" class="text-center">
+          <a href="pilih-jasa.php" class="text-center">
             <p id="i-want-a-service">Order a service!</p>
           </a>
         </div>

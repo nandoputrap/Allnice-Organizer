@@ -3,9 +3,13 @@
 ?>
 
 <?php
+  require_once "core/init.php";
+?>
+
+<?php
 /*
 /////////////*
-BAGIAN FUNGSI
+BEGIN BAGIAN FUNGSI
 /////////////*
 */
 
@@ -26,10 +30,11 @@ function escape($string_to_escape){
 }
 
 /*FUNGSI ADD DATA*/
-function add_data($nama,$email,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$catatan){
+function add_data($nama,$email,$no_telp,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$catatan){
 
   $nama          = escape($nama);
   $email         = escape($email);
+  $no_telp       = escape($no_telp);
   $jenis_kelamin = escape($jenis_kelamin);
   $jasa          = escape($jasa);
   $paket         = escape($paket);
@@ -41,8 +46,8 @@ function add_data($nama,$email,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$c
   $catatan         = escape($catatan);
 
 
-  $query = "INSERT INTO pesanan(nama,email,jenis_kelamin,jasa,paket,tgl_pemesanan,waktu_pemesanan,tgl_event,daerah,catatan)
-  VALUES ('$nama','$email','$jenis_kelamin','$jasa','$paket','$tgl_pemesanan','$waktu_pemesanan','$tgl_event','$daerah','$catatan')";
+  $query = "INSERT INTO pesanan(nama,email,no_telp,jenis_kelamin,jasa,paket,tgl_pemesanan,waktu_pemesanan,tgl_event,daerah,catatan)
+  VALUES ('$nama','$email','$no_telp','$jenis_kelamin','$jasa','$paket','$tgl_pemesanan','$waktu_pemesanan','$tgl_event','$daerah','$catatan')";
   return run($query);
 }
 ?>
@@ -51,23 +56,33 @@ function add_data($nama,$email,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$c
   $error = "";
 
   if(isset($_POST['submit'])){
-    $nama  = $_POST['nama'];
-    $email = $_POST['email'];
+    $nama          = $_POST['nama'];
+    $email         = $_POST['email'];
+    $no_telp       = $_POST['no_telp'];
     $jenis_kelamin = $_POST['jenis_kelamin'];
-    $jasa = "Birthday";
-    $paket = $_POST['paket'];
-    $tgl_event = $_POST['tgl_event'];
-    $tgl_event = date('Y-m-d', strtotime($tgl_event));
-    $daerah = $_POST['daerah'];
-    $catatan = $_POST['catatan'];
+    $jasa          = "Birthday";
+    $paket         = $_POST['paket'];
+    $tgl_event     = $_POST['tgl_event'];
+    $tgl_event     = date('Y-m-d', strtotime($tgl_event));
+    $daerah        = $_POST['daerah'];
+    $catatan       = $_POST['catatan'];
 
-    if (add_data($nama, $email,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$catatan)){
+    if (add_data($nama,$email,$no_telp,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$catatan)){
       echo "<script>alert('berhasil')</script>";
     }else{
       $error = "Ada masalah ketika input data";
     }
   }
+
+
+/*
+/////////////*
+END BAGIAN FUNGSI
+/////////////*
+*/
 ?>
+
+
 
 <div class="container-fluid bg bg-order">
 	<div class="container">
@@ -97,6 +112,15 @@ function add_data($nama,$email,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$c
             </div>
           </div>
     	    <!-- end of email -->
+
+          <!-- no telp -->
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="no_telp"><p>No Handphone:</p></label>
+            <div class="col-sm-6">
+              <input type="text" name="no_telp" class="form-control" id="no_telp" placeholder="Enter No. Handphone..">
+            </div>
+          </div>
+          <!-- end of no telp -->
 
           <!-- Jenis Kelamin -->
           <div class="form-group">

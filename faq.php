@@ -62,6 +62,7 @@
                 </div>
              </div>
            </div>
+
            <div class="panel panel-default">
              <div class="panel-heading">
                <h4 class="panel-title">
@@ -81,6 +82,55 @@
                </div>
              </div>
            </div>
+
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4 class="panel-title">
+                 <a class="list-faq" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                 Apakah saya bisa bebas memilih perlengkapan acara yang tidak sesuai dengan paket yang tersedia?</a>
+               </h4>
+             </div>
+             <div id="collapse6" class="panel-collapse collapse">
+               <div class="panel-body">
+                 <p>
+                 Disesuaikan dengan jenis paket wedding party atau birthday party yang dipilih. Jika paket Emerald pada wedding party atau paket Gold pada birthday party yang dipilih, maka Anda bebas memilih perlengkapan yang Anda inginkan. Namun, jika memilih paket yang lain, maka perlengkapan yang disediakan pun sesuai dengan yang ada pada paket.
+                 </p>
+               </div>
+             </div>
+           </div>
+
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4 class="panel-title">
+                 <a class="list-faq" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                 Kapan waktu operasioanal Allnice Organizer?</a>
+               </h4>
+             </div>
+             <div id="collapse7" class="panel-collapse collapse">
+               <div class="panel-body">
+                 <p>
+                  Toko kami beroperasi dari Senin s/d Jum'at jam 09.00 s/d jam 20.00 WIB. Sedangkan Sabtu & Minggu kami tidak buka, chat tetap dibalas namun slow respon.
+                  </p>
+               </div>
+             </div>
+           </div>
+
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4 class="panel-title">
+                 <a class="list-faq" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                 Pertanyaan Anda belum terjawab di halaman FAQ ini?</a>
+               </h4>
+             </div>
+             <div id="collapse8" class="panel-collapse collapse">
+               <div class="panel-body">
+                 <p>
+                 Silakan hubungi tim CS kami di 085716513806 atau mention ke twitter kami di @allniceI.
+                 </p>
+               </div>
+             </div>
+           </div>
+
           </div>
 
         </div>

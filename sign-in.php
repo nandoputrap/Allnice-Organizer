@@ -2,6 +2,36 @@
  require_once "core/init.php";
 ?>
 
+<?php
+
+session_start(); // Menciptakan session
+
+if(cek_login($mysqli) == true){
+header('Location: admin.php');
+exit();
+}else{
+//echo "<script>alert('Salah')</script>";
+echo "<script>Location: sign-in.php</script>";
+}
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+if(isset($_POST['username']) and isset($_POST['password'])){
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+  if(login($username, $password, $mysqli) == true){
+    // Berhasil login
+    header('location: admin.php');
+    exit();
+  }else{
+    // Gagal login
+    header('location: sign-in.php');
+    exit();
+  }
+}
+}
+
+?>
+
 <div class="container-fluid bg bg-sign-in">
   <div class="container">
     <div class="content-sign-in">
@@ -9,9 +39,9 @@
         <div class="title-sign-in">
           <h1 class="text-center">SIGN IN</h1>
         </div>
-        <div class="form-sign-in">
 
-          <form>
+        <div class="form-sign-in">
+          <form method="post" action="">
             <div class="input-group input-sign-in">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
               <input id="email" type="text" class="form-control" name="email" placeholder="Username...">

@@ -642,6 +642,10 @@ BEGIN ORDER.PHP
   box-shadow: 1px 1px 10px #2f2f2f;
 }
 
+.form-pesanan{
+  margin: 0 50px;
+}
+
 .title-order{
   padding: 30px 0;
 }
