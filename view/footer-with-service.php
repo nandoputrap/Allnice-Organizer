@@ -9,10 +9,10 @@
             <ul>
               <li><i class="fa fa-map-marker"></i><p class="kontak">Jl. Berkah No. 26 Ciomas, Bogor.</p></li>
               <li><i class="fa fa-phone"></i><p class="kontak">+6285716513806</p></li>
-              <li><i class="fa fa-envelope-o"></i><p class="kontak">allniceorganizer@gmail.com</p></li>
+              <li><i class="fa fa-envelope-o"></i><p class="kontak">allniceorganizer.id@gmail.com</p></li>
               <li><a href="#"><i class="fa fa-facebook"></i><p class="kontak">Allnice Organizer</p></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i><p class="kontak">allniceorganizer</p></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i><p class="kontak">@allniceorganizer</p></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i><p class="kontak">allniceorganizer.id</p></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i><p class="kontak">@allnicel</p></a></li>
             </ul>
           </div>
 

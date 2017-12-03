@@ -12,7 +12,7 @@
         <!--wedding-->
         <div class="col-md-6">
           <div class="box-jasa">
-            <center><i class="fa fa-jasa fa-group text-center"></i></center>
+            <center><i class="fa fa-jasa fa-diamond text-center"></i></center>
             <a href="order-wedding.php"><h2 class="text-center">Wedding Party</h2></a>
           </div>
         </div>
@@ -20,7 +20,7 @@
         <!--birthday-->
         <div class="col-md-6">
           <div class="box-jasa">
-            <center><i class="fa fa-jasa fa-dollar text-center"></i></center>
+            <center><i class="fa fa-jasa fa-birthday-cake text-center"></i></center>
             <a href="order-birthday.php"><h2 class="text-center">Birthday Party</h2></a>
           </div>
         </div>

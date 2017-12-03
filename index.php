@@ -60,13 +60,18 @@
             <div class="col-md-6">
               <img class="img-services img-rounded" id="marriage-service" src="assets/img/marriage-service.jpg" alt="Card image cap">
               <a href="#"><h3 class="text-center index-services">Wedding Party</h3></a>
-              <p class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="text-center">
+                Create your wedding party like the party that you've been waiting for.
+                Allnice Organizer will make your wedding become an extraordinary event in your life!
+              </p>
             </div>
 
             <div class="col-md-6">
               <img class="img-services img-rounded" id="birthday-service" src="assets/img/birthday-service.jpg" alt="Card image cap">
               <a href="#"><h3 class="text-center index-services">Birthday Party</h3></a>
-              <p class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="text-center">
+                Create your birthday party become a memorable day in every year with the presence of your family, relatives, and friends!
+              </p>
             </div>
           </div>
         </div>
@@ -100,15 +105,15 @@
           <div class="col-md-4">
             <i class="fa fa-certificate text-center"></i>
             <h3 class="def-services">Sertifikat</h3>
-            <p class="def-services text-center">Sudah teruji dan memiliki sertifikat taraf Internasional.</p>
+            <p class="def-services text-center">Penghargaan sebagai Organizer terbaik 5 tahun berturut-turut, sejak tahun 2012 se-Jawa Barat.</p>
           </div>
         </div>
 
         <div class="item-services">
           <div class="col-md-4">
-            <i class="fa fa-gears text-center"></i>
-            <h3 class="def-services">Garansi</h3>
-            <p class="def-services text-center">Memberikan garansi all-item selama 1 tahun. Kualitas barang terjamin.</p>
+            <i class="fa fa-cutlery text-center"></i>
+            <h3 class="def-services">Catering</h3>
+            <p class="def-services text-center">Menyediakan makanan yang telah teruji oleh pihak kesehatan dan chef ternama Indonesia.</p>
           </div>
         </div>
       </center>
@@ -154,7 +159,7 @@
     <div class="sticky">
       <div class="box">
         <div class="content-box">
-          <a href="order.php" class="text-center">
+          <a href="pilih-jasa.php" class="text-center">
             <p id="i-want-a-service">Order a service!</p>
           </a>
         </div>

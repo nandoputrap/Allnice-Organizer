@@ -20,11 +20,11 @@ if(isset($_POST['username']) and isset($_POST['password'])){
   $password = $_POST['password'];
   if(login($username, $password, $mysqli) == true){
     // Berhasil login
-    header('location: admin.php');
+    header('Location: admin.php');
     exit();
   }else{
-    // Gagal login
-    header('location: sign-in.php');
+    echo "<script>alert('gagal login woy')</script>";
+    header('Location: sign-in.php');
     exit();
   }
 }
@@ -41,10 +41,10 @@ if(isset($_POST['username']) and isset($_POST['password'])){
         </div>
 
         <div class="form-sign-in">
-          <form method="post" action="">
+          <form method="post" action="sign-in-function.php">
             <div class="input-group input-sign-in">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input id="email" type="text" class="form-control" name="email" placeholder="Username...">
+              <input id="username" type="text" class="form-control" name="username" placeholder="Username...">
             </div>
             <div class="input-group input-sign-in">
               <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>

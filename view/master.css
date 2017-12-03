@@ -1,7 +1,7 @@
 /****GENERAL*****/
 *{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
 }
 
@@ -34,8 +34,8 @@ a:hover, a:focus{
 }
 
 .container-fluid{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /*bg = bagian. untuk memisah setiap bagian pada web*/
@@ -147,6 +147,10 @@ BEGIN FOOTER.PHP
 .kontak{
   display: inline;
   margin-left: 20px;
+}
+
+.item-footer>.col-md-4{
+  padding-bottom: 50px;
 }
 
 .item-footer>.col-md-4>ul>li{
@@ -336,7 +340,7 @@ BEGIN INDEX.PHP
 
 .col-md-4>i{
   font-size: 50px;
-  margin: 20px;
+  margin: 0;
   color: #0B8389;
 }
 
@@ -581,41 +585,49 @@ BEGIN PILIH JASA.PHP
 ////////////////
 */
 .bg-pilih-jasa{
-  margin: 100px 0;
+  padding: 100px 0;
+  background-image: url(../assets/img/bg-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-pilih-jasa{
-  margin: 0 20px;
+  margin: 100px 20px;
 }
 
-.item-pilih-jasa{
-  margin: 100px 0;
+.title-pilih-jasa>h1{
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }
 
-.item-pilih-jasa>.col-md-6{
-  margin: auto;
-  padding: 50px;
+.box-jasa{
+  margin: 100px auto;
+  height: 500px;
+  width: 90%;
   border: solid 2px transparent;
   border-radius: 5px;
   background-color: #0B8389;
   box-shadow: 1px 1px 10px #2f2f2f;
 }
 
-.col-md-6>.box-jasa{
-  margin: 50px;
+.box-jasa:hover{
+  background-color: #097075;
 }
 
-.box-jasa{
-  margin: 0 30px;
+.box-jasa>a>h2{
+  color: white;
+}
+
+.box-jasa>a>h2:hover{
+  color: #D9F5BE;
 }
 
 .box-jasa>center>i{
   font-size: 100px;
-  margin-bottom: 50px;
+  margin: 155px auto 30px auto;
   color: white;
 }
 
-.
 /*
 /////////////////
 END PILIH JASA.PHP
@@ -634,16 +646,12 @@ BEGIN ORDER.PHP
 .content-order{
   margin: 100px auto;
   background-color: #0B8389;
-  width: 600px;
-  height: 700px;
+  width: auto;
+  height: auto;
   padding: 30px 0;
   border: solid 2px transparent;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #2f2f2f;
-}
-
-.form-pesanan{
-  margin: 0 50px;
 }
 
 .title-order{
@@ -654,6 +662,23 @@ BEGIN ORDER.PHP
   color: white;
   text-shadow: 1px 1px 5px black;
 }
+
+.form-pesanan{
+  margin: 50px 10%;
+}
+
+.form-control{
+  width: 100%;
+}
+
+.control-label{
+  color: white;
+  text-shadow: 1px 1px 5px #2f2f2f;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 
 
 /*

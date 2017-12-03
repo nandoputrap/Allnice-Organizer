@@ -1,11 +1,11 @@
 <?php
-require_once "view/header.php";
+require_once "core/init.php";
 
 session_start();
 
 if(cek_login($mysqli) == false){ // Jika user tidak login
-    header('location: signin.php'); // Alihkan ke halaman login (index.php)
-    exit(); 
+    header('Location: sign-in.php'); // Alihkan ke halaman login (sign-in.php)
+    exit();
 }
 
 $stmt = $mysqli->prepare("SELECT adminname FROM admin WHERE id = ?");
@@ -39,61 +39,78 @@ $stmt->fetch();
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <table width="100%" class="table table-striped table-bordered table-hover table-responsive" id="dataTables-example">
                                 <thead>
                                     <tr>
                                         <th>No.</th>
+                                        <th>Kode Pesanan</th>
                                         <th>Nama</th>
                                         <th>email</th>
+                                        <th>No. Handphone</th>
                                         <th>Jenis Kelamin</th>
                                         <th>jasa</th>
-                                        <th>paket</th>
+                                        <th>Paket</th>
+                                        <th>tanggal Pemesanan</th>
+                                        <th>Waktu Pemesanan</th>
+                                        <th>tanggal Acara</th>
                                         <th>daerah</th>
-                                        <th>tanggal</th>
                                         <th>catatan</th>
-                                        <th>DELETE</th>                              
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                 <?php
-                                $sql = "SELECT nama, email, jenis_kelamin, jasa, paket, daerah, tanggal, catatan FROM pendaftaran ";
+                                $sql = "SELECT kode_pesanan,nama,email,no_telp,jenis_kelamin,jasa,paket,tgl_pemesanan,waktu_pemesanan,tgl_event,daerah,catatan FROM pesanan";
                                 $hasil = $mysqli->query($sql);
                                 $no=0;
 
-                                while ($data=$hasil->fetch_array()) {                                  
+
+
+                                while ($data=$hasil->fetch_array()) {
+                                  $tgl_pemesanan = date('d-m-Y',strtotime($data['tgl_pemesanan']));
+                                  $tgl_event = date('d-m-Y',strtotime($data['tgl_event']));
+
+
                                     echo "<tr>";
 
                                     $no+=1;
                                     echo "<td>$no</td>";
+                                    echo "<td>$data[kode_pesanan]</td>";
                                     echo "<td>$data[nama]</td>";
                                     echo "<td>$data[email]</td>";
-                                    
-                                    if (@$data[jenis_kelamin]==0){
+                                    echo "<td>$data[no_telp]</td>";
+
+                                    /*if (@$data[jenis_kelamin]==0){
                                         $jenisk="Laki-laki";
                                     }else{
                                         $jenisk="Perempuan";
-                                    }
-                                    echo "<td>$jenisk</td>";
-                                   
-                                    if (@$data[jasa]==0){
+                                    }*/
+                                    echo "<td>$data[jenis_kelamin]</td>";
+
+                                    /*if (@$data[jasa]==0){
                                         $jasa="Wedding";
                                     }else{
                                         $jasa="Birthday";
-                                    }
-                                    echo "<td>$jasa</td>";
+                                    }*/
+                                    echo "<td>$data[jasa]</td>";
                                     echo "<td>$data[paket]</td>";
+                                    echo "<td>$tgl_pemesanan</td>";
+                                    echo "<td>$data[waktu_pemesanan]</td>";
+                                    echo "<td>$tgl_event</td>";
                                     echo "<td>$data[daerah]</td>";
-                                    echo "<td>$data[tanggal]</td>";
                                     echo "<td>$data[catatan]</td>";
-                                    echo "<td><a href='delete.php?email=$data[email]' onclick='return confirm(Yakin mau di hapus?);'><u>DELETE</u></a>
+
+
+                                    /*echo "<td><a href=""></a></td>";*/
+                                    echo "<td><a href='delete.php?kode_pesanan=$data[kode_pesanan]'><u>DELETE</u></a>
                                         </td>";
                                 }
                                 ?>
                                 </tbody>
                             </table>
                             <!-- /.table-responsive -->
-                          
+
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -103,16 +120,16 @@ $stmt->fetch();
             </div>
         </div>
       </div>
-      <a href="signout.php">SIGN OUT</a>
+      <a href="sign-out.php">SIGN OUT</a>
     </div>
   </div>
 
 <!-- footer -->
-<?php include "view/footer.php";?>
-    
+<?php include "view/footer-with-service.php";?>
+
     <!-- <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script> -->
-    
+
     <!-- DataTables JavaScript -->
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap.min.js"></script>

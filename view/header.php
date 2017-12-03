@@ -1,3 +1,9 @@
+<?php
+session_start();
+include "functions/config.php";
+include "fungsi.php";
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,6 +18,20 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    
+
+    <SCRIPT language=Javascript>
+
+function isNumberKey(evt)
+{
+var charCode = (evt.which) ? evt.which : event.keyCode
+if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+return false;
+return true;
+}
+</SCRIPT>
   </head>
 
   <body>
@@ -42,7 +62,21 @@
               <li><a href="gallery.php">GALLERY</a></li>
               <li><a href="about.php">ABOUT</a></li>
               <li><a href="faq.php">FAQ</a></li>
-              <li><a href="sign-in.php">SIGN IN</a></li>
+
+              <!--BEGIN CEK LOGIN-->
+              <?php
+              if(cek_login($mysqli) == true){ // Jika user tidak login
+                  echo('<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ADMIN <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="admin.php">ORDERS</a></li>
+                  <li><a href="sign-out.php">SIGN OUT</a></li>
+                </ul>');
+              }else{
+              echo('<li><a href="sign-in.php">SIGN IN</a></li>');
+              }
+              ?>
+              <!--END CEK LOGIN-->
 
             </ul>
           </div><!--/.nav-collapse -->
