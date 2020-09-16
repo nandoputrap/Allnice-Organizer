@@ -65,7 +65,6 @@ function add_data($nama,$email,$no_telp,$jenis_kelamin,$jasa,$paket,$tgl_event,$
 
     if (add_data($nama,$email,$no_telp,$jenis_kelamin,$jasa,$paket,$tgl_event,$daerah,$catatan)){
       echo "<script>alert('berhasil')</script>";
-      echo "<script>Location='index.php';</script>";
     }else{
       $error = "Ada masalah ketika input data";
     }

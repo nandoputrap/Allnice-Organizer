@@ -54,7 +54,7 @@ if(isset($_POST['username']) and isset($_POST['password'])){
               <button type="submit" class="btn btn-success btn-allnice">Sign In</button>
             </center>
           </form>
-          <a href="lupapassword.php"><p class="text-center lupa-password">Forgot Password?</p></a>
+          <p class="text-center lupa-password">&copy; Allnice Organizer</p>
         </div>
       </div>
     </div>

@@ -1,20 +1,20 @@
 <?php
 require_once "core/init.php";
 
-session_start();
+/*session_start();
 
-if(cek_login($mysqli) == false){ // Jika user tidak login
+*/if(cek_login($mysqli) == false){ // Jika user tidak login
     header('Location: sign-in.php'); // Alihkan ke halaman login (sign-in.php)
     exit();
 }
-
+/*
 $stmt = $mysqli->prepare("SELECT adminname FROM admin WHERE id = ?");
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
 $stmt->store_result();
 $stmt->bind_result($username);
 $stmt->fetch();
-
+*/
 //session_start();
 /*if(empty($_SESSION['username'])){
     echo "<center>TAMPILAN SEBELUM LOGIN</center><br/>Maaf sepertinya anda belum Login,silahkan tekan link login dibawah <br/>
@@ -26,14 +26,15 @@ $stmt->fetch();
 //str_replace("IN","OUT", "SIGN IN");
 
 ?>
-  <div class="container-fluid bg-2">
-  <div class="container">
+  <div class="bg-admin">
+  <!--<div class="container"> -->
+    <br/>
     <h1 class = "text-center signin">ORDERS</h1>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-lg-12">
           <div class="row">
                 <div class="col-sm-12">
-                    <div class="panel panel-default">
+                    <div class="panel-default">
                         <div class="panel-heading">
                             Data Pemesanan
                         </div>
@@ -42,20 +43,21 @@ $stmt->fetch();
                             <table width="100%" class="table table-striped table-bordered table-hover table-responsive" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th>No.</th>
-                                        <th>Kode Pesanan</th>
-                                        <th>Nama</th>
-                                        <th>email</th>
-                                        <th>No. Handphone</th>
-                                        <th>Jenis Kelamin</th>
-                                        <th>jasa</th>
-                                        <th>Paket</th>
-                                        <th>tanggal Pemesanan</th>
-                                        <th>Waktu Pemesanan</th>
-                                        <th>tanggal Acara</th>
-                                        <th>daerah</th>
-                                        <th>catatan</th>
-                                        <th>Aksi</th>
+                                        <th><center>No.</center></th>
+                                        <th><center>Kode</center></th>
+                                        <th><center>Nama</center></th>
+                                        <th><center>Email</center></th>
+                                        <th><center>No. Handphone</center></th>
+                                        <th><center>Jenis Kelamin</center></th>
+                                        <th><center>Jasa</center></th>
+                                        <th><center>Paket</center></th>
+                                        <th><center>Tgl Pemesanan</center></th>
+                                        <th><center>Waktu Pemesanan</center></th>
+                                        <th><center>Tgl Acara</center></th>
+                                        <th><center>Daerah</center></th>
+                                        <th><center>Catatan</center></th>
+                                        <th><center>Delete</center></th>
+                                        <th><center>Finish</center></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -75,35 +77,37 @@ $stmt->fetch();
                                     echo "<tr>";
 
                                     $no+=1;
-                                    echo "<td>$no</td>";
-                                    echo "<td>$data[kode_pesanan]</td>";
-                                    echo "<td>$data[nama]</td>";
-                                    echo "<td>$data[email]</td>";
-                                    echo "<td>$data[no_telp]</td>";
+                                    echo "<td><center>$no</center></td>";
+                                    echo "<td><center>$data[kode_pesanan]</center></td>";
+                                    echo "<td><center>$data[nama]</center></td>";
+                                    echo "<td><center>$data[email]</center></td>";
+                                    echo "<td><center>$data[no_telp]</center></td>";
 
                                     /*if (@$data[jenis_kelamin]==0){
                                         $jenisk="Laki-laki";
                                     }else{
                                         $jenisk="Perempuan";
                                     }*/
-                                    echo "<td>$data[jenis_kelamin]</td>";
+                                    echo "<td><center>$data[jenis_kelamin]</center></td>";
 
                                     /*if (@$data[jasa]==0){
                                         $jasa="Wedding";
                                     }else{
                                         $jasa="Birthday";
                                     }*/
-                                    echo "<td>$data[jasa]</td>";
-                                    echo "<td>$data[paket]</td>";
-                                    echo "<td>$tgl_pemesanan</td>";
-                                    echo "<td>$data[waktu_pemesanan]</td>";
-                                    echo "<td>$tgl_event</td>";
-                                    echo "<td>$data[daerah]</td>";
-                                    echo "<td>$data[catatan]</td>";
+                                    echo "<td><center>$data[jasa]</center></td>";
+                                    echo "<td><center>$data[paket]</center></td>";
+                                    echo "<td><center>$tgl_pemesanan</center></td>";
+                                    echo "<td><center>$data[waktu_pemesanan]<center></td>";
+                                    echo "<td><center>$tgl_event</center></td>";
+                                    echo "<td><center>$data[daerah]</center></td>";
+                                    echo "<td><center>$data[catatan]</center></td>";
 
 
                                     /*echo "<td><a href=""></a></td>";*/
-                                    echo "<td><a href='delete.php?kode_pesanan=$data[kode_pesanan]'><u>DELETE</u></a>
+                                    echo "<td><a href='delete.php?kode_pesanan=$data[kode_pesanan]'><u><center>DELETE<center></u></a>
+                                        </td>";
+                                    echo "<td><a href='update.php?kode_pesanan=$data[kode_pesanan]'><u><center>FINISH<center></u></a>
                                         </td>";
                                 }
                                 ?>
@@ -120,8 +124,7 @@ $stmt->fetch();
             </div>
         </div>
       </div>
-      <a href="sign-out.php">SIGN OUT</a>
-    </div>
+   <!--  </div> -->
   </div>
 
 <!-- footer -->

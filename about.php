@@ -36,24 +36,36 @@
           <div class="col-lg-12">
             <img class="img-circle" id="ceo-team" src="assets/img/anggota-kelompok-nando.jpg" alt="Card image cap">
             <h3 class="text-center">Nando Putra Pratama</h3>
-            <h5>CEO ALLNICE Organizer</h5>
+            <h5>Project Manager</h5>
+            <ul>
+              <li><p>Page Home</p></li>
+              <li><p>Page Sign In</p></li>
+            </ul>
           </div>
           </center>
 
           <!--HIRARKI KEDUA-->
           <center>
             <div class="col-md-4">
-              <img class="img-circle" id="purchase-team" src="assets/img/avatar-example.png" alt="Card image cap">
+              <img class="img-circle" id="purchase-team" src="assets/img/anggota-kelompok-bima.jpg" alt="Card image cap">
               <h3 class="text-center">Ario Bima Abdullah</h3>
-              <h5>Purchase ALLNICE Organizer</h5>
+              <h5>Backend Developer</h5>
+              <ul>
+                <li><p>Page FAQ</p></li>
+                <li><p>Database</p></li>
+              </ul>
             </div>
           </center>
 
           <center>
             <div class="col-md-4">
-              <img class="img-circle" id="purchase-team" src="assets/img/avatar-example.png" alt="Card image cap">
+              <img class="img-circle" id="purchase-team" src="assets/img/anggota-kelompok-dimas.jpg" alt="Card image cap">
               <h3 class="text-center">Dimas Kukuh Prasangko</h3>
-              <h5>Purchase ALLNICE Organizer</h5>
+              <h5>Backend Developer</h5>
+              <ul>
+                <li><p>Page Admin</p></li>
+                <li><p>Page Update</p></li>
+              </ul>
             </div>
           </center>
 
@@ -61,7 +73,11 @@
           <div class="col-md-4">
             <img class="img-circle" id="purchase-team" src="assets/img/anggota-kelompok-gemala.jpg" alt="Card image cap">
             <h3 class="text-center">Gemala Putri Santri Rosa</h3>
-            <h5>Purchase ALLNICE Organizer</h5>
+            <h5>Frontend Developer</h5>
+            <ul>
+              <li><p>Page Gallery</p></li>
+              <li><p>Dokumentasi - BAB 2</p></li>
+            </ul>
           </div>
           </center>
 
@@ -69,7 +85,11 @@
           <div class="col-md-4">
             <img class="img-circle" id="purchase-team" src="assets/img/anggota-kelompok-natasya.jpg" alt="Card image cap">
             <h3 class="text-center">Natasya Putri Irani</h3>
-            <h5>Purchase ALLNICE Organizer</h5>
+            <h5>Frontend Developer</h5>
+            <ul>
+              <li><p>Page Order</p></li>
+              <li><p>Dokumentasi - BAB 4</p></li>
+            </ul>
           </div>
           </center>
 
@@ -77,9 +97,13 @@
 
           <center>
           <div class="col-md-4">
-            <img class="img-circle" id="purchase-team" src="assets/img/avatar-example.png" alt="Card image cap">
+            <img class="img-circle" id="purchase-team" src="assets/img/anggota-kelompok-rindang.jpg" alt="Card image cap">
             <h3 class="text-center">Rindang Rahastri Pratiwi</h3>
-            <h5>Purchase ALLNICE Organizer</h5>
+            <h5>Frontend Developer</h5>
+            <ul>
+              <li><p>Page About</p></li>
+              <li><p>Dokumentasi - BAB 1</p></li>
+            </ul>
           </div>
           </center>
 
@@ -87,7 +111,12 @@
           <div class="col-md-4">
             <img class="img-circle" id="purchase-team" src="assets/img/anggota-kelompok-vicky.jpg" alt="Card image cap">
             <h3 class="text-center">Vicky Dwi Putra</h3>
-            <h5>Purchase ALLNICE Organizer</h5>
+            <h5>Testing and Maintenance</h5>
+            <ul>
+              <li><p>Page Services</p></li>
+              <li><p>Dokumentasi - BAB 3</p></li>
+
+            </ul>
           </div>
           </center>
 

@@ -18,8 +18,12 @@ include "fungsi.php";
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/animate.css">-->
+    <!--<link rel="stylesheet" href="css/flexslider.css">-->
+    <!--<link rel="stylesheet" href="css/icomoon.css">-->
 
-    
+
+
 
     <SCRIPT language=Javascript>
 
@@ -32,6 +36,8 @@ return false;
 return true;
 }
 </SCRIPT>
+
+
   </head>
 
   <body>
@@ -55,7 +61,7 @@ return true;
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#Services">WEDDING</a></li>
+                  <li><a href="wedding.php">WEDDING</a></li>
                   <li><a href="birthday.php">BIRTHDAY</a></li>
                 </ul>
               </li>
@@ -70,6 +76,7 @@ return true;
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">ADMIN <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="admin.php">ORDERS</a></li>
+                  <li><a href="finish.php">FINISHED ORDERS</a></li>
                   <li><a href="sign-out.php">SIGN OUT</a></li>
                 </ul>');
               }else{
